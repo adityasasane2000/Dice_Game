@@ -3,7 +3,8 @@ import styled from "styled-components";
 const NumberSelector = ({setError,error,selectedNumber,setSelectedNumber}) =>{
     const arrNumber = [1,2,3,4,5,6];
 
-    const numberSelectorHandler = ({value}) =>{
+    const numberSelectorHandler = (value) =>{
+        console.log(value);
         setSelectedNumber(value);
         setError("");
     }
